@@ -183,6 +183,7 @@ describe("BinTree", function(){
         [7,3,9,1,99,44,66].forEach(function(v) {
           binTree.insertRecursively(v);
         });
+        expect(binTree.findLowest()).toEqual(1);
       });
     });
     describe("#findHighest", function(){
@@ -191,6 +192,7 @@ describe("BinTree", function(){
         [7,3,9,1,99,44,66].forEach(function(v) {
           binTree.insertRecursively(v);
         });
+        expect(binTree.findHighest()).toEqual(99);
       });
     });
     describe("#size", function(){

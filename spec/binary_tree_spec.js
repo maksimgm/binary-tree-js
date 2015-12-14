@@ -173,7 +173,7 @@ describe("BinTree", function(){
       });
       describe("postorder", function(){
         it("searches from left - right - root", function(){
-          expect(binTree.DFSInOrder()).toEqual([1, 3, 7, 9, 44, 66, 99]);
+          expect(binTree.DFSPostOrder()).toEqual([1, 3, 66, 44, 99, 9, 7]);
         });
       });
     });

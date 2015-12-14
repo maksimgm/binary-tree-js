@@ -130,15 +130,15 @@ describe("BinTree", function(){
     describe("#recursively", function(){
       it("should find a value in binTree with many values", function(){
         [7,3,9,1,99,44,66].forEach(function(v) {
-          expect(binTree.containsIteratively(v)).toEqual(true);
+          expect(binTree.containsRecursively(v)).toEqual(true);
         });
       });
       it("should return true, when it's found", function() {
-        expect(binTree.containsIteratively(66)).toEqual(true);
+        expect(binTree.containsRecursively(66)).toEqual(true);
       });
       it("should return false, when it's not found", function() {
-        expect(binTree.containsIteratively(-20)).toEqual(false);
-        expect(binTree.containsIteratively(20)).toEqual(false);
+        expect(binTree.containsRecursively(-20)).toEqual(false);
+        expect(binTree.containsRecursively(20)).toEqual(false);
       });
     });
   });

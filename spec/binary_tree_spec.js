@@ -68,7 +68,7 @@ describe("BinTree", function(){
     });
   });
 
-  describe("#insert recursively", function(){
+  xdescribe("#insert recursively", function(){
     beforeEach(function () {
        binTree = new data.BinTree();
        binTree.insertRecursively(5);

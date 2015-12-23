@@ -68,7 +68,7 @@ describe("BinTree", function(){
     });
   });
 
-  xdescribe("#insert recursively", function(){
+  describe("#insert recursively", function(){
     beforeEach(function () {
        binTree = new data.BinTree();
        binTree.insertRecursively(5);
@@ -204,7 +204,7 @@ describe("BinTree", function(){
         expect(binTree.size()).toEqual(7);
       });
     });
-    describe("#remove", function(){
+    xdescribe("#remove", function(){
       beforeEach(function(){
         binTree = new data.BinTree();
         [7,3,9,8,5,1,99,44,33,66].forEach(function(v) {
